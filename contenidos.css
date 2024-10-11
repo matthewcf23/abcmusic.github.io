@@ -1,0 +1,90 @@
+/* Reset y estructura general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #222;
+    color: #e9e9e9;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* Imagen de fondo */
+.background {
+    background-image: url('../img/hero-slider-1.jpg'); /* Asegúrate de que la ruta coincida */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Estilos de la sección de título */
+.title {
+    margin-bottom: 30px;
+}
+.title h1 {
+    font-size: 36px;
+    color: #fff;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+.title p {
+    font-size: 18px;
+    color: #bbb;
+}
+
+/* Estilos para la lista de lecciones */
+.content-list {
+    display: flex;
+    flex-direction: row; /* Cambiado a fila */
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 80%;
+    max-width: 1200px;
+}
+.lesson {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 45%; /* Ajusta el ancho para que quepan dos lecciones lado a lado */
+    text-align: center;
+}
+.lesson h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.lesson h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.lesson p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #ddd;
+}
+.lesson a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #35a2a2;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+.lesson a:hover {
+    background-color: #2b7c7c;
+}

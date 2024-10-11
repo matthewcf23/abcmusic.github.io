@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('../img/hero-slider-1.jpg');
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+}
+.container {
+  width: 95%;
+  max-width: 480px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+#tuner-container {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+}
+#tuner-container canvas {
+  width: 100% !important;
+  height: auto !important;
+}
+#button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+button {
+  padding: 15px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+#startButton {
+  background-color: #4CAF50;
+}
+#stopButton {
+  background-color: #f44336;
+}
+#homeButton {
+  background-color: #2196F3;
+}
+button:hover {
+  opacity: 0.9;
+}
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+@media (min-width: 481px) {
+  .container {
+    padding: 20px;
+  }
+  #button-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  button {
+    flex: 1;
+    margin: 0 5px;
+  }
+}
